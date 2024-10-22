@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "cover_img": "https://i.ibb.co.com/mRPr5KL/Rectangle-2-4.png",
+      "author_img": "https://i.ibb.co.com/8NTTYS7/boy2.jpg",
+      "author_name": "Jane Doe",
+      "posted_date": "2024-10-21",
+      "reading_time": 5,
+      "blog_title": "The Future of JavaScript Frameworks",
+      "hashtags": ["JavaScript", "Frameworks", "WebDevelopment"]
+    },
+    {
+      "id": 2,
+      "cover_img": "https://i.ibb.co.com/TwP4Stk/jaredd-craig-HH4-WBGNyltc-unsplash.jpg",
+      "author_img": "https://i.ibb.co.com/Z21H24x/boy1.png",
+      "author_name": "John Smith",
+      "posted_date": "2024-10-19",
+      "reading_time": 8,
+      "blog_title": "How to Build Scalable Web Apps with Node.js",
+      "hashtags": ["Node.js", "Backend", "Scalability"]
+    },
+    {
+      "id": 3,
+      "cover_img": "https://i.ibb.co.com/wNy8Rsq/Rectangle-3.png",
+      "author_img": "https://i.ibb.co.com/KxmkGS8/girl1.jpg",
+      "author_name": "Emily Johnson",
+      "posted_date": "2024-10-15",
+      "reading_time": 7,
+      "blog_title": "Tailwind CSS: Best Practices for Modern Web Design",
+      "hashtags": ["TailwindCSS", "CSS", "WebDesign"]
+    },
+    {
+      "id": 4,
+      "cover_img": "https://i.ibb.co.com/TwP4Stk/jaredd-craig-HH4-WBGNyltc-unsplash.jpg",
+      "author_img": "https://i.ibb.co.com/b6RQvDR/girl2.jpg",
+      "author_name": "Michael Brown",
+      "posted_date": "2024-10-12",
+      "reading_time": 6,
+      "blog_title": "Understanding the MERN Stack: A Complete Guide",
+      "hashtags": ["MERN", "MongoDB", "React", "Express", "Node.js"]
+    }
+  ]
+  
