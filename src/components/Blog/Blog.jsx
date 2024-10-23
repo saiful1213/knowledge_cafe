@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { Bookmark } from 'lucide-react';
 
-const Blog = ({ blog }) => {
-    const { cover_img, author_img, author_name, posted_date, reading_time, blog_title, hashtags } = blog;
+const Blog = ({ blog, handleReadTime, handleBookMark }) => {
+    const { id, cover_img, author_img, author_name, posted_date, reading_time, blog_title, hashtags } = blog;
 
     return (
         <div className=' mb-8 rounded-xl pb-2'>
@@ -15,19 +15,26 @@ const Blog = ({ blog }) => {
                         <p className='text-[#11111199] font-semibold'>{posted_date}</p>
                     </div>
                 </div>
-                <p className='flex items-center text-[#11111199] text-xl font-bold'>{reading_time} min read <span><Bookmark></Bookmark></span></p>
+                <p className='flex items-center text-[#11111199] text-xl font-bold'>{reading_time} min read
+                    <span onClick={() => handleBookMark(blog)}>
+                        <Bookmark></Bookmark>
+                    </span>
+                </p>
             </div>
             <h2 className='text-[#111] text-4xl font-bold mb-4'>{blog_title}</h2>
             <p className='mt-4'>
                 {hashtags.map(hashtag => <a href='#' key={hashtag} className='text-[#11111199] text-xl font-medium mr-3'>#{hashtag}</a>)}
             </p>
-            <button className='text-xl font-semibold text-[#6047EC] underline mt-5'>Mark as read</button>
+            <button className='text-xl font-semibold text-[#6047EC] underline mt-5' 
+            onClick={() => handleReadTime(reading_time, id)}>Mark as read</button>
         </div>
     )
 }
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleReadTime: PropTypes.func.isRequired,
+    handleBookMark: PropTypes.func.isRequired,
 }
 
 export default Blog;
